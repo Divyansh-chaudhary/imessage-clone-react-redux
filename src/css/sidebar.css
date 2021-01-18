@@ -1,0 +1,126 @@
+.sidebar {
+	background-color: #f5f5f5;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	border: 1px solid lightgray;
+	transition: 0.2s;
+}
+
+.sidebar-header {
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	height:50px;
+}
+.sidebar-avatar {
+	cursor:pointer;
+	margin:10px;
+}
+.sidebar-input {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex:1;
+	background-color: #e1e1e1;
+	color: gray;
+	border-radius:5px;
+}
+
+.sidebar-input > input {
+	border:0;
+	outline-width:0;
+	background:transparent;
+}
+
+.sidebar-chats {
+	height:93%;
+	overflow:auto;
+}
+
+.sidebar-chats::-webkit-scrollbar {
+	display:none;
+}
+
+.sidebar-chat-a {
+	display:flex;
+	border-bottom:1px solid lightgray;
+}
+
+.sidebar-chat {
+	display:flex;
+	align-items:center;
+	padding:20px;
+	cursor: pointer;
+	flex:1;
+}
+
+.sidebar-chat:hover {
+	background:#3e93fd;
+	color:white;
+}
+
+.sidebar-chat-info {
+	margin-left:15px;
+	position:relative;
+	width:100%;
+}
+
+.sidebar-chat-info > p {
+	font-size: 12px;
+	margin-top:5px;
+	color: gray;
+}
+
+.sidebar-chat-info > small {
+	position:absolute;
+	right: 0px;
+	bottom: -15px;
+	font-size:9px;
+}
+
+.more-option {
+	color: gray;
+	margin-top: 10px;
+	margin-left:auto;
+	margin-right:5px;
+	position:relative;
+}
+
+.more-option .icon {
+	cursor:pointer;
+}
+
+.more-option .icon:hover {
+	color:#3e93fd;
+}
+
+.sidebar-chat:hover .more-option {
+	background:white;
+}
+
+.sidebar-chat:hover .sidebar-chat-info > p {
+	color:white;
+}
+
+.delete-option {
+	background:white;
+	padding: 3px 5px;
+	font-size:11px;
+	position:absolute;
+	top:20px;
+	right:0;
+	z-index:1;
+	cursor:pointer;
+}
+
+.delete-option:hover {
+	background:#3e93fd;
+	color:white;
+}
+
+@media screen and (max-width: 630px) {
+	.sidebar {
+		display:none;
+	}
+}

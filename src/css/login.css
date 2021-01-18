@@ -1,0 +1,29 @@
+.login {
+	height:100vh;
+	background:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	text-align:center;
+}
+
+.logo {
+	margin-bottom:3rem;
+}
+
+.logo img {
+	width: 200px;
+	object-fit:contain;
+}
+
+.login .signin-btn {
+	background: #1386f7;
+	color:white;
+	width: 250px;
+}
+
+.login .signin-btn:hover {
+	background: #1386f7;
+	color:white;
+}
