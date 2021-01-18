@@ -43,7 +43,7 @@ export default function SideBar({showMenu, setShowMenu}) {
 					/>
 				</div>
 				<IconButton  onClick={addChat} variant='outlined' className='sidebar-input-button'>
-					<RateReviewOutlinedIcon />
+					<RateReviewOutlinedIcon className="add-chat" />
 				</IconButton>
 			</div>
 			<div className="sidebar-chats">

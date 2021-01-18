@@ -78,7 +78,7 @@ export default function Chat({setShowMenu, showMenu}) {
 				messages.map(({id, data}) => 
 					<Message key={id} content={data} />	
 				) :
-				""
+				<h2 className='empty-chat'>Select your Chat</h2>
 			}
 			</div>
 			{
@@ -86,8 +86,8 @@ export default function Chat({setShowMenu, showMenu}) {
 				<div className='chat-input'>
 					<form>
 						<input value={msg} onChange={e => setMsg(e.target.value)} placeholder="iMessage" type='text' />
-						<IconButton  type='submit' onClick={sendMsg}>
-							<SendIcon />
+						<IconButton type='submit' onClick={sendMsg}>
+							<SendIcon className="send-btn" />
 						</IconButton>
 					</form>
 				</div> :
